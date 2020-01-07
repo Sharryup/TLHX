@@ -100,7 +100,7 @@ public class GamePanel extends JPanel implements KeyListener {
       	for(int i = 0; i < list2.size(); i++) {
       		Obstacle o = list2.get(i);
       		g2.drawImage(o.image1, o.x,o.y,this);
-      		o.move();//金币依次出现
+      		o.move();//蘑菇依次出现
       	
       	if (o.mgBounds().intersects(golden.getHeadBounds()) || o.mgBounds().intersects(golden.getFootBounds())) {//与地面金币的碰撞检测
       		o.mgMove();//吃到蘑菇后金币消失
